@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
 Header unset X-Powered-By
 RewriteEngine On
-RewriteBase /myke/CodeIgniter-3.1.5/
+RewriteBase /myke/codeigniter-crud-app/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$  index.php [L] 
