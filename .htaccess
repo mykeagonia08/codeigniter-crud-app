@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+Header unset X-Powered-By
+RewriteEngine On
+RewriteBase /myke/CodeIgniter-3.1.5/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$  index.php [L] 
+</IfModule>
+
+php_value upload_max_filesize 1028M  
+php_value post_max_size 800M  
+php_value max_input_time 3600  
+php_value max_execution_time 3600
